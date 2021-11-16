@@ -1,10 +1,10 @@
 FROM bioconductor/bioconductor_docker:RELEASE_3_13
 
-LABEL name="bocker" \
+LABEL name="dockerthesis" \
       version="0.2.0" \
-      url="https://github.com/Alanocallaghan/bocker" \
+      url="https://github.com/Alanocallaghan/dockerthesis" \
       maintainer="alan.ocallaghan@outlook.com" \
-      description="Docker image containing BASiCS and related packages" \
+      description="Docker image for rendering thesis docs" \
       license="GPL-3"
 
 RUN apt-get update
@@ -37,6 +37,7 @@ RUN Rscript -e 'install.packages(c( \
     "magick", \
     "patchwork", \
     "tidyr", \
+    "mvtnorm", \
     "hexbin"), Ncpus = 4)'
 
 RUN Rscript -e 'BiocManager::install(c( \
