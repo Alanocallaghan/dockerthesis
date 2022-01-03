@@ -38,6 +38,7 @@ RUN Rscript -e 'install.packages(c( \
     "patchwork", \
     "tidyr", \
     "mvtnorm", \
+    "tikzDevice", \
     "hexbin"), Ncpus = 4)'
 
 RUN Rscript -e 'BiocManager::install(c( \
