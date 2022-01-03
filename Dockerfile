@@ -53,4 +53,5 @@ RUN Rscript -e 'BiocManager::install(c( \
     "ComplexHeatmap", \
     "scater", \
     "SingleCellExperiment", \
+    "scRNAseq", \
     "BiocWorkflowTools"), Ncpus = 4)'
