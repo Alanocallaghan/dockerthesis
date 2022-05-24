@@ -55,4 +55,5 @@ RUN Rscript -e 'BiocManager::install(c( \
     "scater", \
     "SingleCellExperiment", \
     "scRNAseq", \
+    "ggrastr", \
     "BiocWorkflowTools"), Ncpus = 4)'
